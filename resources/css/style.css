@@ -1,0 +1,207 @@
+html {
+  font-size: 18px;
+}
+body {
+  font-family: helvetica;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 960px;
+}
+header .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .container img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+header p {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0.66rem 0;
+}
+.banner {
+  width: 100%;
+  height: 25rem;
+  background: url("../images/banner.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+.announcement {
+  background-color: black;
+  width: 20rem;
+  margin-top: 9rem;
+  color: white;
+  padding: 2rem 3rem;
+  text-transform: uppercase;
+}
+.announcement h3 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.announcement p {
+  margin-top: 0.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+menu {
+  width: 100%;
+  background-color: firebrick;
+  display: flex;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav span {
+  padding: 0.75rem;
+}
+nav span a {
+  color: white;
+  text-decoration: none;
+}
+.mobile-nav {
+  display: none;
+}
+.products {
+  display: flex;
+  padding: 3rem 0;
+  justify-content: space-between;
+}
+.product {
+  border: 4px solid black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.product img {
+  padding: 2rem;
+  height: 9rem;
+  object-fit: contain;
+}
+.product h4 {
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+.location, .hours {
+  width: 35%;
+}
+.info h4 {
+  color: white;
+  background-color: black;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+.info p {
+  padding-top: 0.25rem;
+  text-align: center;
+}
+footer {
+  height: 5rem;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px){
+  .container {
+    width: 100%;
+  }
+  .product {
+    width: 47%;
+  }
+  .glasses {
+    display: none;
+  }
+  .full-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  nav {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+  header img {
+    display: inline-block;
+    height: 1rem;
+  }
+  header p {
+    display: inline-block;
+  }
+  .banner {
+    height: 15rem;
+  }
+  .announcement {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .announcement h3 {
+    font-size: 0.77rem;
+  }
+  .announcement p {
+    font-size: 1rem;
+  }
+  .watch {
+    display: none;
+  }
+  .products {
+    display: flex;
+    justify-content: center;
+  }
+  .product {
+    width: 90%;
+  }
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info div {
+    width: 90%;
+  }
+  .location {
+    margin-bottom: 0.5rem;
+  }
+  footer {
+    text-align: center;
+  }
+}
